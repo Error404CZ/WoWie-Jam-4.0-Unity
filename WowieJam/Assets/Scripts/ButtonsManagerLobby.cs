@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonsManager : MonoBehaviour
+public class ButtonsManagerLobby : MonoBehaviour
 {
     [SerializeField] private List<GameObject> menus = new List<GameObject>();
 
