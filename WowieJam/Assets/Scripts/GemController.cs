@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gemScript : MonoBehaviour
+public class GemController : MonoBehaviour
 {
     public FlagController flagController;
     

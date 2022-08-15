@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FlagController : MonoBehaviour
 {
+    public AIController aiController;
+    
     private Vector3 screenPosition;
     private Vector3 worldPosition;
     
@@ -22,6 +24,7 @@ public class FlagController : MonoBehaviour
 
             worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
             worldPosition.z = 0f;
+            aiController.targetTransform = worldPosition;
             
             GameObject newInstance = Instantiate(flag);
             newInstance.transform.position = worldPosition;
