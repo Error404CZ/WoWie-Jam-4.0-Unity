@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     [SerializeField] private string levelToLoad;
-    public void OnCollisionEnter2D(Collision2D col)
+
+    public void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene(levelToLoad);
+        if (col.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(levelToLoad);
+            Debug.Log("Loading Level");
+        }
     }
 }

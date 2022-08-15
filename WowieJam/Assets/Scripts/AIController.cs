@@ -66,7 +66,7 @@ public class AIController : MonoBehaviour
                 x.SetActive(false);
             }
             blockParts[1].SetActive(true);
-            Debug.Log("2");
+           
         }
         else if (effects[2] && !flagController.isFlagable)
         {
@@ -76,7 +76,7 @@ public class AIController : MonoBehaviour
                 x.SetActive(false);
             }
             blockParts[2].SetActive(true);
-            Debug.Log("3");
+           
         }
         else
         {
@@ -87,7 +87,7 @@ public class AIController : MonoBehaviour
                 x.SetActive(false);
             }
             blockParts[0].SetActive(true);
-            Debug.Log("1");
+           
         }
         
         
